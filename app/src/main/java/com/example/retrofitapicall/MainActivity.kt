@@ -16,8 +16,8 @@ import java.io.IOException
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var binding: ActivityMainBinding
-    lateinit var todoAdapter: TodoAdapter
+    private lateinit var binding: ActivityMainBinding
+    private lateinit var todoAdapter: TodoAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()

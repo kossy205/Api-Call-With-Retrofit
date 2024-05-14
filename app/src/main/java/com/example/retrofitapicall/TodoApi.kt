@@ -16,7 +16,8 @@ interface TodoApi {
     suspend fun getTodos(): Response<List<Todo>>
 
 
-    //EXAMPLE
+
+    //EXAMPLE 1
     // the endpoint "/todos" is gotten from the api url. it is what comes after the ".com" of the api url
     // basically it is the specific directory where we want to fetch data from
     // the "@Query" is used when the api requires an api key. the exact string passed to this is
@@ -25,7 +26,7 @@ interface TodoApi {
 //    fun getTodos(@Query("apiKey") apiKey: String): Response<List<Todoo>>
 
 
-    //EXAMPLE
+    //EXAMPLE 2
     //in this case we used @POST, because we are sending info to the api for it to give us a response.
     // the endpoint "/createTodo" is the specific directory from the api url to send the details to for us to get a response
     // "@Body todoo: Todoo"  is the request body and it sends the details in form of Json to the api.
