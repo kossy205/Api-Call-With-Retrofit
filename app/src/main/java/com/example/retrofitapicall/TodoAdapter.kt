@@ -30,7 +30,7 @@ class TodoAdapter: RecyclerView.Adapter<TodoAdapter.TodoViewHolder>() {
 
     override fun getItemCount() = todos.size
 
-    // return the viewholder which is the inner class we created here
+    // return the view-holder which is the inner class we created here
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TodoViewHolder {
         return TodoViewHolder(ItemTodoBinding.inflate(
             LayoutInflater.from(parent.context),

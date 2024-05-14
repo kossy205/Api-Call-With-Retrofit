@@ -12,6 +12,7 @@ object RetrofitInstance {
     // the "by lazy" is used to ensure the "val api" variable is initialized only on its first use.
     // It helps to optimize resources by delaying the creation of the Retrofit client until it's
     // actually needed.
+
     val api: TodoApi by lazy {
         Retrofit.Builder()
             .baseUrl("https://jsonplaceholder.typicode.com")
